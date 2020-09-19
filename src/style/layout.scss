@@ -1,4 +1,15 @@
 @charset "utf-8";
 
-@import '@carbon/themes/scss/themes';
+@import "@carbon/themes/scss/themes";
 @import "carbon-components/scss/globals/scss/styles.scss";
+@import "@carbon/grid/scss/grid";
+@import "@carbon/type/scss/type";
+@import "@carbon/type/scss/font-face/_mono.scss";
+@import "@carbon/type/scss/font-face/_sans.scss";
+
+@include carbon--type-reset();
+@include carbon--font-face-mono();
+@include carbon--font-face-sans();
+
+// Pages
+@import "./pages/home";
