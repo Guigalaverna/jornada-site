@@ -1,21 +1,33 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import SignupForm from "../components/signupForm";
 
 const IndexPage = () => (
-  <Layout>
+  <Layout className="home">
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <section className="hero">
+      <h1>Jornada Dev</h1>
+      <p>
+        Criando jornadas de aprendizados de ciências da computação e
+        programação.
+      </p>
+    </section>
+    <section className="about">
+      <div>
+        <h2>Sobre o projeto</h2>
+        <p>explicar melhor sobre o projeto</p>
+      </div>
+      <div>
+        <h2>Acreditamos que..</h2>
+        <p>
+          Explicar no que acreditamos e como esse projeto pode resolver a
+          jornada de aprendizado de programação.
+        </p>
+      </div>
+    </section>
+    <SignupForm></SignupForm>
   </Layout>
 )
 
