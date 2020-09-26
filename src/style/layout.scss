@@ -11,5 +11,8 @@
 @include carbon--font-face-mono();
 @include carbon--font-face-sans();
 
+// base
+@import "./base/container";
+
 // Pages
 @import "./pages/home";
