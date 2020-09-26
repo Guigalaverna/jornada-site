@@ -99,9 +99,16 @@ const items = [
   },
 ]
 
-export default function SignupForm() {
-  const { register, handleSubmit, errors } = useForm()
+export default function SignupForm({email}) {
+  const { register, handleSubmit, errors, setValue } = useForm()
   const onSubmit = data => console.log("submit", data)
+
+  if(email) {
+    setValue('textEmail', email, {
+      shouldValidate: true,
+      shouldDirty: true
+    });
+  }
 
   return (
     <section className="sign-up">
