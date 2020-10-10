@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {
   Button,
   Checkbox,
@@ -9,8 +9,10 @@ import {
   Select,
   SelectItem,
   TextInput,
+  ToastNotification,
 } from "carbon-components-react"
 import { useForm } from "react-hook-form"
+import Axios from "axios"
 
 const items = [
   {
@@ -99,15 +101,54 @@ const items = [
   },
 ]
 
-export default function SignupForm({email}) {
+export default function SignupForm({ email }) {
   const { register, handleSubmit, errors, setValue } = useForm()
-  const onSubmit = data => console.log("submit", data)
+  const [submitError, setSubmitError] = useState(true)
+  const onSubmit = async data => {
+    console.log("submit", data)
 
-  if(email) {
-    setValue('textEmail', email, {
+    const [name, ...lastName] = data.textName.split(" ")
+
+    const formData = Object.entries({
+      "mauticform[nome]": name,
+      "mauticform[sobrenome]": lastName.join(" "),
+      "mauticform[email]": data.textEmail,
+      "mauticform[nivel_da_jornada]": data.selectLevel,
+      "mauticform[optin][]": data.checkNewsletter ? "newsletter" : "",
+      'mauticform[formId]': 6,
+      'mauticform[return]': '',
+      'mauticform[formName]': 'jornadadev',
+      'mauticform[messenger]': '1',
+
+      // TODO: o multiselect não esta funcionando, possivelmente um conflito com o component do carbon
+      // 'mauticform[tecnologias]': data.selectTechnologies,
+    })
+      .map(([key, val]) => `${key}=${encodeURIComponent(val)}`)
+      .join("&")
+
+    try {
+      await Axios.post(
+        "https://marketing.obrunogermano.com/index.php/form/submit?formId=6",
+        formData,
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-Requested-With": "XMLHttpRequest",
+          },
+        }
+      )
+    } catch (err) {
+      setSubmitError(true);
+      console.error(err);
+    }
+  }
+
+  if (email) {
+    setValue("textEmail", email, {
       shouldValidate: true,
-      shouldDirty: true
-    });
+      shouldDirty: true,
+    })
   }
 
   return (
@@ -165,7 +206,7 @@ export default function SignupForm({email}) {
                       <SelectItem text="" value="" />
                       <SelectItem text="Iniciante" value="iniciante" />
                       <SelectItem text="Intermediário" value="intemediario" />
-                      <SelectItem text="Avaçãdo" value="avançado" />
+                      <SelectItem text="Avançado" value="avancado" />
                     </Select>
                   </FormGroup>
                 </div>
@@ -200,11 +241,11 @@ export default function SignupForm({email}) {
                     name="checkPrivacyPolices"
                     ref={register({ required: true })}
                   />
-                {errors.checkPrivacyPolices && (
-                  <FormLabel className="label--error">
-                    Para prosseqguir concorde com as nossas políticas
-                  </FormLabel>
-                )}
+                  {errors.checkPrivacyPolices && (
+                    <FormLabel className="label--error">
+                      Para prosseqguir concorde com as nossas políticas
+                    </FormLabel>
+                  )}
                 </fieldset>
               </FormGroup>
 
@@ -214,6 +255,28 @@ export default function SignupForm({email}) {
             </Form>
           </div>
         </div>
+      </div>
+      <div
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+        }}
+      >
+        {submitError ? (
+          <ToastNotification
+            caption=""
+            kind="error"
+            hideCloseButton={true}
+            subtitle={
+              <span>Ocorreu um erro no servidor ao enviar os seus dados.</span>
+            }
+            timeout={20 * 1000}
+            title="Erro inesperado"
+          />
+        ) : (
+          ""
+        )}
       </div>
     </section>
   )
