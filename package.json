@@ -29,6 +29,7 @@
     "react-hook-form": "^6.8.3"
   },
   "devDependencies": {
+    "gatsby-cli": "^2.12.109",
     "prettier": "2.1.0"
   },
   "keywords": [
