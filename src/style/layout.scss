@@ -6,6 +6,7 @@
 @import "@carbon/type/scss/type";
 @import "@carbon/type/scss/font-face/_mono.scss";
 @import "@carbon/type/scss/font-face/_sans.scss";
+@import '@carbon/type/scss/_font-family.scss';
 
 @include carbon--type-reset();
 @include carbon--font-face-mono();
@@ -16,3 +17,6 @@
 
 // Pages
 @import "./pages/home";
+
+// Templates
+@import "./templates/challenge";

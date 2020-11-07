@@ -1,0 +1,46 @@
+.challenge {
+  padding-top: 48px;
+
+  &-container {
+    margin: 80px 0;
+  }
+
+  &-title {
+    @include carbon--font-family("mono");
+    @include carbon--font-weight("semibold");
+    font-size: 24px;
+
+    & + h1 {
+        margin: 0 0 1em !important;
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    @include carbon--font-family("mono");
+    @include carbon--font-weight("semibold");
+    margin: 1em 0;
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 1em;
+}
+
+ul {
+    border-left: 1px solid black;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    
+    li {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0;
+      margin-bottom: .5em;
+    }
+  }
+}
