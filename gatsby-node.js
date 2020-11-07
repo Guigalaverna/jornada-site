@@ -8,7 +8,7 @@
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
-    const desafiosTemplate = require.resolve(`./src/templates/desafios.js`)
+    const desafiosTemplate = require.resolve(`./src/templates/challenge.js`)
     const result = await graphql(`
       {
         allMarkdownRemark(
