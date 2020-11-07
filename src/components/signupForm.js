@@ -103,7 +103,7 @@ const items = [
 
 export default function SignupForm({ email }) {
   const { register, handleSubmit, errors, setValue } = useForm()
-  const [submitError, setSubmitError] = useState(true)
+  const [submitError, setSubmitError] = useState(false)
   const onSubmit = async data => {
     console.log("submit", data)
 
