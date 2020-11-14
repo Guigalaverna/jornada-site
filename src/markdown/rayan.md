@@ -1,12 +1,12 @@
 ---
 slug: "/desafios/rayan"
-date: "2020-14-11"
+date: "2020-11-14"
 title: "Rayan"
 ---
 
 # Calculadora de Adição
 
-Esse desafio irá capturar 2 números inteiros, e no final vai pegar eles e somá-los. 
+Esse desafio irá capturar 2 números inteiros, e no final vai pegar eles e somá-los.
 
 ## Funcionalidades
 
