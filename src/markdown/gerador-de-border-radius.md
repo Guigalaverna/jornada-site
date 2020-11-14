@@ -10,9 +10,9 @@ Esse desafio consiste em criar uma página estática em que o usuário possa ins
 
 ## Funcionalidades
 
-1. O usuário deve poder inserir 4 (quatro) valores para aplicar como propiedades de border radius
+[] O usuário deve poder inserir 4 (quatro) valores para aplicar como propiedades de border radius
 
-2. O usuário poderá copiar o código CSS para a Área de Transferência
+[] O usuário poderá copiar o código CSS para a Área de Transferência
 
 ## Links de Ajuda
 
