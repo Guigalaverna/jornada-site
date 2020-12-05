@@ -8,12 +8,16 @@
 @import "@carbon/type/scss/font-face/_sans.scss";
 @import '@carbon/type/scss/_font-family.scss';
 
+// Use the gray 90 theme
+@include carbon--theme($carbon--theme--g90);
+
 @include carbon--type-reset();
 @include carbon--font-face-mono();
 @include carbon--font-face-sans();
 
 // base
 @import "./base/container";
+@import "./base/footer";
 
 // Pages
 @import "./pages/home";
