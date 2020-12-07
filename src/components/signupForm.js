@@ -153,7 +153,6 @@ export default function SignupForm({ email }) {
 
   return (
     <section className="sign-up">
-      form para se cadastrar e fazer parte da jornada
       <div className="bx--grid">
         <div className="bx--row">
           <div className="bx--col">
