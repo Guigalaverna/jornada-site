@@ -15,4 +15,8 @@ h5 {
   @include carbon--font-family("mono");
   @include carbon--font-weight("semibold");
   margin-bottom: 1em;
+
+  &.no-margin {
+    margin-bottom: 0;
+  }
 }
