@@ -10,7 +10,7 @@ import {
 } from "carbon-components-react"
 import CodeMinimap from "../../../components/code-minimap"
 
-const SectionHero = ({formSubmit}) => {
+const SectionHero = ({ formSubmit }) => {
   const { register, handleSubmit, errors } = useForm()
 
   const onSubmit = data => {
@@ -21,7 +21,7 @@ const SectionHero = ({formSubmit}) => {
   return (
     <section className="section section-hero hero">
       <Grid>
-        <Row>
+        <Row condensed>
           <Column>
             <div
               className=""
@@ -36,41 +36,41 @@ const SectionHero = ({formSubmit}) => {
           </Column>
           <Column>
             <h1>Jornada Dev</h1>
+
             <p>
-              Entre em uma jornada de desafios para se tornar um melhor
-              desenvolvedora ou desenvolvedor.
+              Entre em uma jornada de desafios para aprender ou aprimorar seus
+              conhecimentos de programação e ciências da computação.
             </p>
-            <p>Você não precisa pagar nada! 100% gratuito.</p>
+
+            <p style={{ fontStyle: "italic" }}>
+              Você não precisa pagar nada! 100% gratuito.
+            </p>
+
             <Form onSubmit={handleSubmit(onSubmit)}>
-              <Grid>
-                <Row condensed>
-                  <Column>
-                    <TextInput
-                      id="textEmail"
-                      name="textEmail"
-                      type="email"
-                      labelText=""
-                      invalidText="Você precisa informar o seu nome."
-                      placeholder="Seu email"
-                      ref={register({
-                        required: true,
-                        pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
-                      })}
-                      invalid={errors.textEmail}
-                    />
-                  </Column>
-                  <Column>
-                    <Button
-                      kind="primary"
-                      size="field"
-                      tabIndex={0}
-                      type="submit"
-                    >
-                      Iniciar jornada
-                    </Button>
-                  </Column>
-                </Row>
-              </Grid>
+              <div style={{ display: "flex" }}>
+                <TextInput
+                  id="textEmail"
+                  name="textEmail"
+                  type="email"
+                  labelText=""
+                  invalidText="Você precisa informar o seu nome."
+                  placeholder="Seu email"
+                  ref={register({
+                    required: true,
+                    pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+                  })}
+                  invalid={errors.textEmail}
+                />
+                <Button
+                  kind="primary"
+                  size="field"
+                  tabIndex={0}
+                  type="submit"
+                  style={{ "max-height": "2.5rem" }}
+                >
+                  Iniciar jornada
+                </Button>
+              </div>
             </Form>
           </Column>
         </Row>
