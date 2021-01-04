@@ -6,7 +6,8 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@carbon/grid": "^10.15.0",
-    "@carbon/themes": "^10.18.0",
+    "@carbon/icons-react": "^10.20.0",
+    "@carbon/themes": "^10.24.0",
     "@carbon/type": "^10.16.0",
     "axios": "^0.20.0",
     "carbon-components": "^10.19.0",

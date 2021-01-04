@@ -6,6 +6,10 @@
 @import "@carbon/type/scss/type";
 @import "@carbon/type/scss/font-face/_mono.scss";
 @import "@carbon/type/scss/font-face/_sans.scss";
+@import '@carbon/type/scss/_font-family.scss';
+
+// Use the gray 90 theme
+@include carbon--theme($carbon--theme--g90);
 
 @include carbon--type-reset();
 @include carbon--font-face-mono();
@@ -13,6 +17,11 @@
 
 // base
 @import "./base/container";
+@import "./base/footer";
+@import "./base/typography";
 
 // Pages
 @import "./pages/home";
+
+// Templates
+@import "./templates/challenge";

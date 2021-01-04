@@ -1,0 +1,18 @@
+p {
+  margin-bottom: 2em;
+  font-size: 1rem;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include carbon--font-family("mono");
+  @include carbon--font-weight("semibold");
+  margin-bottom: 1em;
+}

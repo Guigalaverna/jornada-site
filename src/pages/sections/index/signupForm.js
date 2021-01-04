@@ -10,6 +10,9 @@ import {
   SelectItem,
   TextInput,
   ToastNotification,
+  Grid,
+  Row,
+  Column,
 } from "carbon-components-react"
 import { useForm } from "react-hook-form"
 import Axios from "axios"
@@ -103,7 +106,7 @@ const items = [
 
 export default function SignupForm({ email }) {
   const { register, handleSubmit, errors, setValue } = useForm()
-  const [submitError, setSubmitError] = useState(true)
+  const [submitError, setSubmitError] = useState(false)
   const onSubmit = async data => {
     console.log("submit", data)
 
@@ -115,10 +118,10 @@ export default function SignupForm({ email }) {
       "mauticform[email]": data.textEmail,
       "mauticform[nivel_da_jornada]": data.selectLevel,
       "mauticform[optin][]": data.checkNewsletter ? "newsletter" : "",
-      'mauticform[formId]': 6,
-      'mauticform[return]': '',
-      'mauticform[formName]': 'jornadadev',
-      'mauticform[messenger]': '1',
+      "mauticform[formId]": 6,
+      "mauticform[return]": "",
+      "mauticform[formName]": "jornadadev",
+      "mauticform[messenger]": "1",
 
       // TODO: o multiselect não esta funcionando, possivelmente um conflito com o component do carbon
       // 'mauticform[tecnologias]': data.selectTechnologies,
@@ -139,8 +142,8 @@ export default function SignupForm({ email }) {
         }
       )
     } catch (err) {
-      setSubmitError(true);
-      console.error(err);
+      setSubmitError(true)
+      console.error(err)
     }
   }
 
@@ -152,14 +155,23 @@ export default function SignupForm({ email }) {
   }
 
   return (
-    <section className="sign-up">
-      form para se cadastrar e fazer parte da jornada
-      <div className="bx--grid">
-        <div className="bx--row">
-          <div className="bx--col">
+    <section className="section section-signup">
+      <Grid>
+        <Row>
+          <Column>
+            <h2>Aprenda ou evolua suas habilidades</h2>
+            <p>
+              Se junte a programadoras e programadores que estão
+              melhorando seus conhecimentos de ciências da computação e
+              programação através de pequenos desafios.
+            </p>
+          </Column>
+        </Row>
+        <Row>
+          <Column>
             <Form onSubmit={handleSubmit(onSubmit)}>
-              <div className="bx--row">
-                <div className="bx--col">
+              <Row>
+                <Column>
                   <FormGroup legendText="">
                     <TextInput
                       id="textName"
@@ -171,8 +183,8 @@ export default function SignupForm({ email }) {
                       invalid={errors.textName}
                     />
                   </FormGroup>
-                </div>
-                <div className="bx--col">
+                </Column>
+                <Column>
                   <FormGroup legendText="">
                     <TextInput
                       id="textEmail"
@@ -188,11 +200,10 @@ export default function SignupForm({ email }) {
                       invalid={errors.textEmail}
                     />
                   </FormGroup>
-                </div>
-              </div>
-
-              <div className="bx--row">
-                <div className="bx--col">
+                </Column>
+              </Row>
+              <Row>
+                <Column>
                   <FormGroup legendText="">
                     <Select
                       id="selectLevel"
@@ -209,8 +220,8 @@ export default function SignupForm({ email }) {
                       <SelectItem text="Avançado" value="avancado" />
                     </Select>
                   </FormGroup>
-                </div>
-                <div className="bx--col">
+                </Column>
+                <Column>
                   <FormGroup legendText="">
                     <MultiSelect
                       id="selectTechnologies"
@@ -224,8 +235,9 @@ export default function SignupForm({ email }) {
                       invalid={errors.selectTechnologies}
                     />
                   </FormGroup>
-                </div>
-              </div>
+                </Column>
+              </Row>
+
               <FormGroup legendText="">
                 <fieldset className="bx--fieldset">
                   <Checkbox
@@ -253,9 +265,9 @@ export default function SignupForm({ email }) {
                 Começar
               </Button>
             </Form>
-          </div>
-        </div>
-      </div>
+          </Column>
+        </Row>
+      </Grid>
       <div
         style={{
           position: "fixed",
