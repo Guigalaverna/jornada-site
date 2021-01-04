@@ -3,7 +3,6 @@ slug: "/desafios/reais-em-moedas"
 date: "2020-10-31"
 title: "Reais em moedas"
 ---
-
 Converter reais em centavos permitiria que você pratique seus conhecimentos básicos de programação. Loops, if, condições e um algoritmo simples serão usados. Sua tarefa é permitir que a pessoa que está usando o programa insira um valor em reais (float), assumindo que ele também pode aceitar centavos extras (por exemplo, R$ 2,75) e convertê-lo em um número inteiro (neste caso, se R$ 2,75 = 275). Depois disso, converta em moedas com os valores de cada uma como: 1 centavo, 5 centavos, 10 centavos, 25 centavos, 50 centavos e 1 Real. Use um algoritmo que dividiria o valor em Reais pelos seis tipos de moedas que geraria o menor número possível de moedas.
 
 O desafio é fazer isso sem usar nenhum framework ou biblioteca.
