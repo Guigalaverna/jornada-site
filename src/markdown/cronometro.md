@@ -1,7 +1,7 @@
 ---
 slug: "/desafios/cronometro"
 date: "2020-10-31"
-title: "Cronometro"
+title: "Cronômetro"
 ---
 
 Um cronômetro ajuda a controlar o tempo gasto em atividades.
