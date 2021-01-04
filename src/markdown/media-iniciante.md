@@ -1,7 +1,7 @@
 ---
 slug: "/desafios/media-iniciante"
 date: "2020-11-21"
-title: "Media"
+title: "Média"
 ---
 
 Leia um lista de 10 números inteiros, calcule e imprimir a média dos elementos.

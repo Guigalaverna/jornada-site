@@ -10,16 +10,16 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout className="challenge">
+    <Layout className="challenge-template">
       <SEO title="Home" />
-      <section className="challenge-container">
+      <section className="challenge-template-container">
         <Grid>
           <Row>
             <Column>
-              <span class="challenge-title">Desafio:</span>
+              <span class="challenge-template-title">Desafio:</span>
               <h1>{frontmatter.title}</h1>
               <div
-                className="challenge-content"
+                className="challenge-template-content"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
             </Column>

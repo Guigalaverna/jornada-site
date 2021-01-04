@@ -3,7 +3,9 @@ import React from "react"
 
 import {
   Header as CarbonHeader,
+  HeaderMenuItem,
   HeaderName,
+  HeaderNavigation,
 } from "carbon-components-react/lib/components/UIShell"
 
 const Header = ({ siteTitle }) => (
@@ -11,6 +13,9 @@ const Header = ({ siteTitle }) => (
     <HeaderName href="/" prefix="OBG">
       {siteTitle}
     </HeaderName>
+    <HeaderNavigation aria-label="OBG Jornada">
+      <HeaderMenuItem href="/desafios">Desafios</HeaderMenuItem>
+    </HeaderNavigation>
   </CarbonHeader>
 )
 
