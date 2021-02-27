@@ -15,10 +15,10 @@ Esse desafio requer que a programadora ou o programador que está implementando 
 
 ## Funcionalidades
 
-- ☑️ A pessoa que está usando esse programa pode inserir até 8 dígitos binários em um campo de entrada
-- ☑️ A pessoa que está usando esse programa deve ser notificado se algo diferente de 0 ou 1 foi inserido
-- ☑️ A pessoa que está usando esse programa visualiza os resultados em um único campo de saída contendo o equivalente decimal (base 10) do número binário que foi inserido
+* A pessoa que está usando esse programa pode inserir até 8 dígitos binários em um campo de entrada
+* A pessoa que está usando esse programa deve ser notificado se algo diferente de 0 ou 1 foi inserido
+* A pessoa que está usando esse programa visualiza os resultados em um único campo de saída contendo o equivalente decimal (base 10) do número binário que foi inserido
 
 **Desafio extra**
 
-- ☑️ A pessoa que está usando esse programa pode inserir um número variados de digitos binários
+* A pessoa que está usando esse programa pode inserir um número variados de digitos binários
