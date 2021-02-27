@@ -2,6 +2,9 @@
 slug: "/desafios/binario-decinal"
 date: "2020-10-31"
 title: "Binario para Decimal"
+level: 0
+levelTitle: Iniciante
+tags: agnostico, matemática
 ---
 
 Binário é o sistema numérico no qual todos os computadores digitais são baseados. Portanto, é importante que os desenvolvedores entendam a matemática binária ou de base 2. O objetivo do Binario para Decimal é fornecer a prática e compreensão de cálculos binários.

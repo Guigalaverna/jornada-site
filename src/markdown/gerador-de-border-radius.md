@@ -2,6 +2,9 @@
 slug: "/desafios/gerador-de-border-radius"
 date: "2020-14-11"
 title: "Gerador de Border Radius"
+level: 0
+levelTitle: Iniciante
+tags: css, sass, style
 ---
 
 Esse desafio consiste em criar uma página estática em que o usuário possa inserir valores para aplicar um estilo e poder copiar o código CSS para a Área de Transferência

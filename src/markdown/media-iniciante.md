@@ -2,6 +2,9 @@
 slug: "/desafios/media-iniciante"
 date: "2020-11-21"
 title: "Média"
+level: 0
+levelTitle: Iniciante
+tags: agnostico, matemática
 ---
 
 Leia um lista de 10 números inteiros, calcule e imprimir a média dos elementos.
