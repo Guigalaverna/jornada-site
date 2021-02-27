@@ -2,6 +2,10 @@
 slug: "/desafios/media-iniciante"
 date: "2020-11-21"
 title: "Média"
+level: 0
+levelTitle: Iniciante
+tags: agnostico, matemática
+author: Fabio Araújo
 ---
 
 Leia um lista de 10 números inteiros, calcule e imprimir a média dos elementos.
@@ -14,9 +18,9 @@ EX.
 
 ## Funcionalidades
 
-* ☑️ A pessoa que está usando o programa só pode inserir números inteiros
-* ☑️ A pessoa que está usando o programa deve preencher os 10 números
+- A pessoa que está usando o programa só pode inserir números inteiros
+- A pessoa que está usando o programa deve preencher os 10 números
 
 **Desafio extra**
 
-* ☑️ Media dinâmica: Deixar a pessoa digitar a quantidade de número que quiser, nesse caso a media deve ser calculada com a quantidade de elementos da lista.
+- Media dinâmica: Deixar a pessoa digitar a quantidade de número que quiser, nesse caso a media deve ser calculada com a quantidade de elementos da lista.

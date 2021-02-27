@@ -1,16 +1,20 @@
 ---
 slug: "/desafios/gerador-de-border-radius"
-date: "2020-14-11"
+date: "2020-11-14"
 title: "Gerador de Border Radius"
+level: 0
+levelTitle: Iniciante
+tags: css, sass, style
+author: Guilherme Galaverna
 ---
 
 Esse desafio consiste em criar uma página estática em que o usuário possa inserir valores para aplicar um estilo e poder copiar o código CSS para a Área de Transferência
 
 ## Funcionalidades
 
-* ☑️ O usuário deve poder inserir 4 (quatro) valores para aplicar como propiedades de border radius
+- O usuário deve poder inserir 4 (quatro) valores para aplicar como propiedades de border radius
 
-* ☑️ O usuário poderá copiar o código CSS para a Área de Transferência
+- O usuário poderá copiar o código CSS para a Área de Transferência
 
 ## Links de Ajuda
 
