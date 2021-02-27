@@ -3,18 +3,23 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Column, Grid, Row } from "carbon-components-react"
+import { Column, Grid, Row, Tag } from "carbon-components-react"
 
 const ChallengesPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___date] }) {
-        edges {
-          node {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date, frontmatter___level] }
+      ) {
+        group(field: frontmatter___level) {
+          nodes {
             frontmatter {
               title
               slug
               date
+              level
+              levelTitle
+              tags
             }
           }
         }
@@ -22,16 +27,32 @@ const ChallengesPage = () => {
     }
   `)
 
-  const challenges = data.allMarkdownRemark.edges.map(
-    ({ node }) => (
-      <div className="challenge">
-        <h2 className="no-margin">
-          <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
-        </h2>
-        <small>{node.frontmatter.date}</small>
+  const {
+    allMarkdownRemark: { group },
+  } = data
+
+  const challenges = group
+    .sort((a, b) => a.nodes[0].frontmatter.level - b.nodes[0].frontmatter.level)
+    .map(({ nodes }) => (
+      <div>
+        <h2>Nível: {nodes[0].frontmatter.levelTitle}</h2>
+        {nodes.map(node => (
+          <div className="challenge">
+            <h3 className="no-margin">
+              <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
+            </h3>
+            <p>
+              <strong>Tags: </strong>
+              {node.frontmatter.tags.split(",").map(tag => (
+                <Tag type="cool-gray" title="Clear Filter">
+                  {tag.toString().trim()}
+                </Tag>
+              ))}
+            </p>
+          </div>
+        ))}
       </div>
-    )
-  )
+    ))
 
   return (
     <Layout className="challenges">
