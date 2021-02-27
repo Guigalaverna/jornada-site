@@ -5,6 +5,7 @@ title: "Média"
 level: 0
 levelTitle: Iniciante
 tags: agnostico, matemática
+author: Fabio Araújo
 ---
 
 Leia um lista de 10 números inteiros, calcule e imprimir a média dos elementos.

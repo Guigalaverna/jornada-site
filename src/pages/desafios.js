@@ -39,7 +39,7 @@ const ChallengesPage = () => {
         {nodes.map(node => (
           <div className="challenge">
             <h3 className="no-margin">
-              <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
+              <Link to={node.frontmatter.slug} style={{textDecoration: 'none'}}>{node.frontmatter.title}</Link>
             </h3>
             <p>
               <strong>Tags: </strong>

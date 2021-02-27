@@ -11,8 +11,13 @@
     font-size: 24px;
 
     & + h1 {
-        margin: 0 0 1em !important;
+      margin: 0 0 1em !important;
     }
+  }
+
+  &-subtitle {
+    margin: -3em 0 0;
+    padding-bottom: 2em;
   }
 
   h1,
@@ -28,19 +33,19 @@
 
   p {
     margin-bottom: 1em;
-}
+  }
 
-ul {
+  ul {
     border-left: 1px solid black;
     margin-bottom: 1em;
     padding-left: 1.5em;
-    
+
     li {
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
       letter-spacing: 0;
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
     }
   }
 }

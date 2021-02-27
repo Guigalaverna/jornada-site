@@ -18,6 +18,11 @@ export default function Template({
             <Column>
               <span class="challenge-template-title">Desafio:</span>
               <h1>{frontmatter.title}</h1>
+              <p className="challenge-template-subtitle">
+                <small>
+                  Enviador por: <strong>{frontmatter.author}</strong> em {frontmatter.date}
+                </small>
+              </p>
               <div
                 className="challenge-template-content"
                 dangerouslySetInnerHTML={{ __html: html }}
@@ -34,9 +39,12 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD/MM/YYYY")
         slug
         title
+        levelTitle
+        tags
+        author
       }
     }
   }

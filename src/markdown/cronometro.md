@@ -5,6 +5,7 @@ title: "Cronômetro"
 level: 0
 levelTitle: Iniciante
 tags: agnostico, tempo
+author: Bruno Germano
 ---
 
 Um cronômetro ajuda a controlar o tempo gasto em atividades.
