@@ -6,17 +6,3 @@ p {
 h1 {
   text-transform: uppercase;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  @include carbon--font-family("mono");
-  @include carbon--font-weight("semibold");
-  margin-bottom: 1em;
-
-  &.no-margin {
-    margin-bottom: 0;
-  }
-}

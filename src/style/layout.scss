@@ -1,19 +1,6 @@
 @charset "utf-8";
 
-@import "@carbon/themes/scss/themes";
-@import "carbon-components/scss/globals/scss/styles.scss";
-@import "@carbon/grid/scss/grid";
-@import "@carbon/type/scss/type";
-@import "@carbon/type/scss/font-face/_mono.scss";
-@import "@carbon/type/scss/font-face/_sans.scss";
-@import '@carbon/type/scss/_font-family.scss';
-
-// Use the gray 90 theme
-@include carbon--theme($carbon--theme--g90);
-
-@include carbon--type-reset();
-@include carbon--font-face-mono();
-@include carbon--font-face-sans();
+@import "~carbon-components/css/carbon-components.min.css";
 
 // base
 @import "./base/container";

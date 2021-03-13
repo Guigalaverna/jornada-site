@@ -6,8 +6,6 @@
   }
 
   &-title {
-    @include carbon--font-family("mono");
-    @include carbon--font-weight("semibold");
     font-size: 24px;
 
     & + h1 {
@@ -23,8 +21,6 @@
   h1,
   h2,
   h3 {
-    @include carbon--font-family("mono");
-    @include carbon--font-weight("semibold");
     margin: 1em 0;
   }
   h1 {
