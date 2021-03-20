@@ -13,3 +13,17 @@
 
 // Templates
 @import "./templates/challenge";
+
+/** mobile **/
+@media (max-width: 768px) {
+  .is-hidden-mobile {
+    display: none;
+  }
+}
+
+/** desktop **/
+@media (min-width: 769px) {
+  .is-hidden-desktop {
+    display: none;
+  }
+}
