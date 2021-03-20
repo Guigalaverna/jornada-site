@@ -1,0 +1,35 @@
+.levelIndicator-container {
+  background-color: #161616;
+  max-width: 180px;
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+
+  margin-bottom: 1rem;
+
+  span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+
+  .levelIndicator-badge-beginner {
+    background: green;
+  }
+
+  .levelIndicator-badge-intermediary {
+    background: orange;
+  }
+
+  .levelIndicator-badge-advanced {
+    background: red;
+  }
+
+  a {
+    color: white;
+  }
+}
+
