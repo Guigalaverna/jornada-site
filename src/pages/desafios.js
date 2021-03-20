@@ -4,7 +4,6 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Column, Grid, Row, Tag } from "carbon-components-react"
-import LevelIndicator from "../components/level-indicator"
 
 const ChallengesPage = () => {
   const data = useStaticQuery(graphql`
