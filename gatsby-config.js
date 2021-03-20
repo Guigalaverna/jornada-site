@@ -4,6 +4,7 @@ module.exports = {
     description: `Criando jornadas de aprendizados de ciências da computação e programação.`,
     author: `@egermano`,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
