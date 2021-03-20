@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Column, Grid, Row } from "carbon-components-react"
+import LevelIndicator from "../components/level-indicator"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -18,11 +19,12 @@ export default function Template({
             <Column>
               <span class="challenge-template-title">Desafio:</span>
               <h1>{frontmatter.title}</h1>
-              <p className="challenge-template-subtitle">
+              <p className="challenge-template-subtitle"> 
                 <small>
                   Enviador por: <strong>{frontmatter.author}</strong> em {frontmatter.date}
                 </small>
               </p>
+                <LevelIndicator level={frontmatter.levelTitle} />
               <div
                 className="challenge-template-content"
                 dangerouslySetInnerHTML={{ __html: html }}
