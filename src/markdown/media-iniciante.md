@@ -8,7 +8,7 @@ tags: agnostico, matemática
 author: Fabio Araújo
 ---
 
-Leia um lista de 10 números inteiros, calcule e imprimir a média dos elementos.
+Leia um lista de 10 números inteiros, calcule e imprima a média dos elementos.
 
 ```
 EX. 
