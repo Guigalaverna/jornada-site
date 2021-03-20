@@ -1,6 +1,6 @@
 # JORNADAS.DEV
 
-Repositorio oficial do site e desafions do [jornadas.dev](http://jornadas.dev)
+Repositorio oficial do site e desafios do [jornadas.dev](http://jornadas.dev)
 
 ## 🤔 O QUE É A JORNADAS.DEV?
 
