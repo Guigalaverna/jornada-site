@@ -1,9 +1,14 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "jornada-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A Jornada é uma iniciativa para quem quer aprender a programar ou aperfeiçoar suas habilidades em programação.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "authors": [
+    "Bruno Germano <contato@egermano.com>", 
+    "Gilherme Galaverna", 
+    "Email Rayan", 
+    "Fabio Araujo <fabio.saraujo@gmail.com>"
+  ],
   "dependencies": {
     "@carbon/grid": "^10.15.0",
     "@carbon/icons-react": "^10.20.0",
