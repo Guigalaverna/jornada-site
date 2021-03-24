@@ -4,7 +4,7 @@ date: '2021-03-20'
 title: 'Calculadora'
 level: 0
 levelTitle: Iniciante
-tags: agnostico, matematica
+tags: agnóstico, matemática
 author: Guilherme Galaverna
 ---
 
@@ -12,7 +12,7 @@ Calculadoras não são apenas uma das ferramentas mais úteis disponíveis, mas 
 
 O estilo é com você, então use sua imaginação e seja criativo! Você pode também vale a pena experimentar o aplicativo calculadora em seu dispositivo móvel para entender melhor a funcionalidade básica e casos extremos.
 
-## Histórias de usuários 
+## Funcionalidades 
 
 - O usuário pode ver uma tela mostrando o número atual inserido ou o resultado da última operação. 
 
