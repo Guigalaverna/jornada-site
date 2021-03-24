@@ -15,7 +15,7 @@ const LevelIndicator = ({ level }) => {
           )}
         </>
       ) }
-      <a className='levelIndicator-level'>{ level }</a>
+      <span className='levelIndicator-level'>{ level }</span>
     </div>
   )
 }
