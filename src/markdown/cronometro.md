@@ -4,7 +4,7 @@ date: "2020-10-31"
 title: "Cronômetro"
 level: 0
 levelTitle: Iniciante
-tags: agnostico, tempo
+tags: agnóstico, tempo
 author: Bruno Germano
 ---
 

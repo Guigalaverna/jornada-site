@@ -4,7 +4,7 @@ date: "2020-11-21"
 title: "Média"
 level: 0
 levelTitle: Iniciante
-tags: agnostico, matemática
+tags: agnóstico, matemática
 author: Fabio Araújo
 ---
 

@@ -4,7 +4,7 @@ date: '2021-03-20'
 title: 'Timer'
 level: 0
 levelTitle: Iniciante
-tags: agnostico, matematica
+tags: agnóstico, matematica
 author: Guilherme Galaverna
 ---
 
@@ -12,7 +12,7 @@ Todos nós temos eventos importantes que esperamos na vida, aniversários, anive
 
 O objetivo do cronômetro de contagem regressiva é fornecer uma diminuição contínua exibição dos meses, dias, horas, minutos e segundos para um usuário inserido evento.
 
-## Histórias de usuários 
+## Funcionalidades 
 
 - O usuário pode ver uma caixa de entrada de evento contendo um campo de nome de evento, um campo de data, uma hora opcional e um botão 'Iniciar'. 
 

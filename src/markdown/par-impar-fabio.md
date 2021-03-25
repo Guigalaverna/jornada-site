@@ -4,7 +4,7 @@ date: "2020-11-14"
 title: "Par ou ímpar"
 level: 0
 levelTitle: Iniciante
-tags: agnostico, matemática
+tags: agnóstico, matemática
 author: Rayan RMW
 ---
 Um programa que verifica o número que foi requisitado se é par ou ímpar

@@ -4,7 +4,7 @@ date: "2020-10-31"
 title: "Binario para Decimal"
 level: 0
 levelTitle: Iniciante
-tags: agnostico, matemática
+tags: agnóstico, matemática
 author: Bruno Germano
 ---
 
